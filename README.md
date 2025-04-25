@@ -19,7 +19,8 @@ The database is organized into multiple tables, including:
 11. **Attribute_type**:To categorize different types of product.
 
 ## E-Commerce ERD
-<img width="428" alt="E-Commerce ERD" src="https://github.com/user-attachments/assets/4655f0ca-5fe4-419b-bae1-a23daf1ace37" />
+![Ecommerce ERD](https://github.com/user-attachments/assets/f170eff6-129b-489e-ad1e-16641e92e3ba)
+
 
 ## How to Use
 1. **Clone the Repository**:  
