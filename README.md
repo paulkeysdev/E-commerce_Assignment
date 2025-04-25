@@ -24,6 +24,7 @@ The database is organized into multiple tables, including:
    Use the following command to clone the repository:
    ```bash
    git clone https://github.com/paulkeysdev/E-commerce_Assignment.git
+   ![image alt] (https://github.com/paulkeysdev/E-commerce_Assignment/blob/ce6ac4803b1bb055b34d5685d53321522a26163b/ERD%20DIagram/Drawio.png)
    
 
 
