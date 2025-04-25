@@ -24,8 +24,8 @@ The database is organized into multiple tables, including:
    Use the following command to clone the repository:
    ```bash
    git clone https://github.com/paulkeysdev/E-commerce_Assignment.git
-
-<img width="428" alt="E-Commerce ERD" src="https://github.com/user-attachments/assets/4655f0ca-5fe4-419b-bae1-a23daf1ace37" />
+## E-Commerce ERD
+![E-Commerce ERD] <img width="428" alt="E-Commerce ERD" src="https://github.com/user-attachments/assets/4655f0ca-5fe4-419b-bae1-a23daf1ace37" />
 
 
 
