@@ -25,7 +25,7 @@ The database is organized into multiple tables, including:
    ```bash
    git clone https://github.com/paulkeysdev/E-commerce_Assignment.git
 
- ![image alt](https://github.com/paulkeysdev/E-commerce_Assignment/blob/ce6ac4803b1bb055b34d5685d53321522a26163b/ERD%20DIagram/Drawio.png)
+<img width="428" alt="E-Commerce ERD" src="https://github.com/user-attachments/assets/4655f0ca-5fe4-419b-bae1-a23daf1ace37" />
 
 
 
