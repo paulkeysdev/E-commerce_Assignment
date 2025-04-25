@@ -2,6 +2,18 @@ CREATE DATABASE ecommercedb;
 
 USE ecommercedb;
 
+-- brand table
+CREATE TABLE brands (
+	brand_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(200)
+);
+
+-- product_category table
+CREATE TABLE product_category (
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100) NOT NULL
+);
+
 -- products table
 CREATE TABLE  products(	
 product_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -21,34 +33,12 @@ product_id INT NOT NULL,
 FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
 
--- product_category table
-CREATE TABLE product_category (
-id INT PRIMARY KEY AUTO_INCREMENT,
-name VARCHAR(100) NOT NULL
-);
-
 -- product_item table
 CREATE TABLE product_item (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     product_id INT,
     FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
-
--- product_attribute table
-CREATE TABLE product_attribute (
-	id INT AUTO_INCREMENT PRIMARY KEY,
-    category_id INT,
-    color INT,
-    FOREIGN KEY (category_id) REFERENCES attribute_category(attribute_category_id),
-	FOREIGN KEY (color) REFERENCES color(color_id)
-);
-
--- brand table
-CREATE TABLE brands (
-	brand_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(200)
-);
-
 
 -- Attribute_category table
 CREATE TABLE attribute_category (
@@ -68,6 +58,23 @@ CREATE TABLE size_category (
   category_name VARCHAR(100) NOT NULL
 );
 
+-- Create attribute_type table
+
+CREATE TABLE Attribute_type(
+AttributeTypeID INT PRIMARY KEY AUTO_INCREMENT,
+AttributeType VARCHAR(50)
+);
+-- product_attribute table
+CREATE TABLE product_attribute (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT,
+    color INT,
+	attributeType_id INT,
+    FOREIGN KEY (category_id) REFERENCES attribute_category(attribute_category_id),
+	FOREIGN KEY (color) REFERENCES color(color_id),
+    FOREIGN KEY (attributeType_id) REFERENCES Attribute_type(AttributeTypeID)
+);
+
 -- Create size option table
 CREATE TABLE Size_option(
 SizeOptID INT PRIMARY KEY AUTO_INCREMENT,
@@ -85,9 +92,3 @@ FOREIGN KEY (Color_Id) REFERENCES color(color_id),
 FOREIGN KEY (Size_Id) REFERENCES Size_option(SizeOptID)
 );
 
--- Create attribute_type table
-
-CREATE TABLE Attribute_type(
-AttributeTypeID INT PRIMARY KEY AUTO_INCREMENT,
-AttributeType VARCHAR(50)
-);
