@@ -23,3 +23,21 @@ CREATE TABLE brand (
     name VARCHAR(200)
 );
 
+
+--Attribute_category table
+CREATE TABLE attribute_category (
+  attribute_category_id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL
+);
+
+-- color table
+CREATE TABLE color (
+  color_id INT AUTO_INCREMENT PRIMARY KEY,
+  color_name VARCHAR(50) NOT NULL,
+);
+
+-- Size_Category table
+CREATE TABLE size_category (
+  size_category_id INT AUTO_INCREMENT PRIMARY KEY,
+  category_name VARCHAR(100) NOT NULL
+);
